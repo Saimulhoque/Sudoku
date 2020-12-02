@@ -26,7 +26,6 @@ import com.forbit.HelpFragment;
 import com.forbit.sudoku.customView.SudokuView;
 import com.google.android.material.button.MaterialButton;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, MainActivityListener, SudokuView.SudokuListener {
 
     LinearLayout game, clear, hint;
