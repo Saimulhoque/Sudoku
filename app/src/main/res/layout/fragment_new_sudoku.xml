@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/dialoguebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/icon"
+                android:padding="8dp"
+                android:src="@drawable/sudoku"
+                app:drawableEndCompat="@drawable/ic_baseline_close_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/veryeasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/refresh"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/very_easy"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/easy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_menu_book_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/easy"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/intermediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_settings_applications_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/intermediate"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/hard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_settings_applications_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/hard"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/expert"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_settings_applications_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/expert"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/extreme"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_settings_applications_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/extreme"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_close_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/close"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

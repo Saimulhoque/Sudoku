@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:src="@drawable/sudoku" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startgame"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+            android:text="Start Game"
+            android:textSize="27sp"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dailysudoku"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_baseline_today_24"
+            android:text="Daily Sudoku"
+            android:textSize="27sp"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/customsudoku"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_baseline_gradient_24"
+            android:text="Custom Sudoku"
+            android:textSize="27sp"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/statistics"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_baseline_sports_esports_24"
+            android:text="My Statistics"
+            android:textSize="27sp"></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+</RelativeLayout>

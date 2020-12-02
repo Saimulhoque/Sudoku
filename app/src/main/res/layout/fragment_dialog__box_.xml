@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/dialoguebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#424242"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/icon"
+                android:padding="8dp"
+                android:src="@drawable/sudoku"
+                app:drawableEndCompat="@drawable/ic_baseline_close_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/restart_sudoku"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/refresh"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/restart_this_sudoku"
+                    android:textSize="16sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/new_sudoku"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_menu_book_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/new_sudoku"
+                    android:textSize="16sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/help_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/ic_baseline_settings_applications_24"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/help_settings"
+                    android:textSize="16sp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_button_height"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/exit"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
