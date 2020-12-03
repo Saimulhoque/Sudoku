@@ -18,28 +18,30 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:background="#000000"
+            android:padding="8dp"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:contentDescription="@string/icon"
                 android:padding="8dp"
-                android:src="@drawable/sudoku"
-                app:drawableEndCompat="@drawable/ic_baseline_close_24" />
+                android:src="@drawable/sudoku"/>
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
+                android:src="@drawable/congratulations"/>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/congratulations"/>
-            </LinearLayout>
-
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_button_height"
+                android:gravity="center"
+                android:text="@string/close"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
