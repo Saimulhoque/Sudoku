@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.settings:
                 SettingsFragment settingsFragment = new SettingsFragment();
                 settingsFragment.setCancelable(false);
-                settingsFragment.show(getSupportFragmentManager(),"jkbkjdfkjhd");
+                settingsFragment.show(getSupportFragmentManager(), "jkbkjdfkjhd");
                 break;
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
